@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Bebas Bold';
+    src: url('./fonts/BebasNeue\ Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Thin';
+    src: url('./fonts/HelveticaNeueCyr-Thin.ttf');
+}
+
+.button {
+    width: 25%;
+    background-color: #F1F3F4;
+    color: black;
+    padding: 0.4%;
+    border: 1px solid black;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    width: 10%;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #F1F3F4;
+    padding: 0.4%;
+}
+
+.button:active {
+    background-color: #F1F3F4;
+}
+
+.blockcentr {
+    margin-left: 35.5%;
+    margin-right: auto;
+}
+
+.header{
+    font-family: 'Bebas Bold';
+    font-size: 450%;
+    letter-spacing: 4px;
+}
+
+.theme {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: 'Helvetica Neue Thin';
+}
+
+.paragraph {
+    font-family: 'Helvetica Neue Thin';
+    font-size: 130%;
+    margin: auto 10%;
+}
+
+.download {
+    background-color: #67FA53;
+}
+
+.download:active {
+    background-color: #9EFA88;
+}

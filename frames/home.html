@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="../js/particles.js"></script>
+        <script>
+            particlesJS.load('particles-js', '../particles.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
+        <style>
+            @font-face {
+                font-family: 'FONT';
+                src: url('../fonts/19490.otf')
+            }
+
+            body {
+                overflow: hidden;
+                position: relative;
+                z-index: 0;
+                background: url('../images/background.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            #particles-js {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            #text {
+                text-align: center;
+                padding: 8% 0 35%;
+            }
+
+            #text p {
+                font-size: 100px;
+                font-family: 'FONT';
+                background: /*linear-gradient(164deg, rgba(9,96,218,1) 0%, rgba(250,95,217,1) 100%);*/ #00FAC2;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div id="text">
+            <p>История интернета</p>
+        </div>
+    </body>
+</html>

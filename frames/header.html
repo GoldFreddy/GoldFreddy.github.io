@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Меню</title>
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none; 
+            }
+
+            body {
+                position: relative;
+                z-index: 0;
+            }
+
+            canvas {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                z-index: -1;
+            }
+
+            p {
+                font-size: 50px;
+                color: rgb(246, 246, 246);
+                text-align: center;
+                margin: auto 10%;
+                padding: 1%;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas-basic"></canvas>
+        <p class="header">История интернета</p>
+        <script src="../js/granim.js"></script>
+        <script src="../js/index.js"></script>
+        <script>
+            var granimInstance = new Granim({
+                element: '#canvas-basic',
+                direction: 'left-right',
+                isPausedWhenNotInView: true,
+                states : {
+                    "default-state": {
+                        gradients: [
+                            /*['#0658F5', '#FC58F5','#FC58F5','#0658F5'],
+                            ['#FC58F5', '#0658F5','#0658F5','#FC58F5'],*/
+                            ['#5605F5', '#56FDF5'],
+                            ['#03B2F5', '#FCB2F5'],
+                            ['#FC544E', '#FACF25'],
+                            ['#ADE651', '#47CF8B']
+                        ],
+                        transitionSpeed: 1300,
+                        loop:true
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
